@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block start %}
+
+<nav>
+  <label class="logo">School Sphere</label>
+  <ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="{% url 'newStudentForm' %}">Admission Form</a></li>
+    <li><a href="{% url 'stddateils' %}">Student Dateils</a></li>
+    <li><a href="#">Fees Recipt</a></li>
+    <li><a href="http://127.0.0.1:8000/admin/">Login</a></li>
+  </ul>
+</nav>
+<section>
+  <img src="https://thumbs.dreamstime.com/b/school-building-vector-illustration-83905184.jpg" style="width: 100%" alt="">
+</section>
+
+
+{% endblock %}
+
